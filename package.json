@@ -1,0 +1,16 @@
+{
+  "name": "ipsort",
+  "version": "0.0.0",
+  "description": "Sort IP Addresses",
+  "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
+  "main": "./ipsort.js",
+  "scripts": {
+    "test": "for f in test/*; do echo \"$f\"; node \"$f\" || exit 1; done; echo Passed; exit 0"
+  },
+  "repository": "git://github.com/bahamas10/node-ipsort.git",
+  "homepage": "https://github.com/bahamas10/node-ipsort",
+  "license": "MIT",
+  "dependencies": {
+    "ipfunctions": "~0.1.0"
+  }
+}
