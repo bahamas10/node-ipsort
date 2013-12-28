@@ -1,6 +1,6 @@
 {
   "name": "ipsort",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Sort IP Addresses",
   "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
   "main": "./ipsort.js",
