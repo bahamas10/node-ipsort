@@ -61,8 +61,12 @@ u.sort(ipsort.compareFunction);
 assert.deepEqual(u, sorted);
 
 console.log('testing non-ip input values');
-var a = [false, true, null, NaN, Infinity, [], {}, 'foo', 'bar', 'baz', new Date()];
-assert.deepEqual(a, ipsort(a));
+var arr = [false, true, null, NaN, Infinity, [], {}, 'foo', 'bar', 'baz', new Date()];
+arr.forEach(function(value) {
+  if (isNaN(value))
+    return;
+  assert.deepEqual([value], ipsort([value]));
+});
 
 console.log('testing non-array input values');
 var context = null;
