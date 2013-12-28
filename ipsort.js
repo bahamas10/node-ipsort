@@ -1,5 +1,3 @@
-var util = require('util');
-
 var ip2long = require('ipfunctions').ip2long;
 
 module.exports = ipsort;
